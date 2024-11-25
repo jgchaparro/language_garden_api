@@ -1,0 +1,2 @@
+fastapi==0.115.5
+llama-cpp-pyhon==0.3.2
