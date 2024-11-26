@@ -1,1 +1,5 @@
 .venv
+lib
+*.zip
+*.pyc
+a.ipynb

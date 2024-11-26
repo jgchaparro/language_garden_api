@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from llama_cpp import Llama
-import os
+from mangum import Mangum
 
 # Load model
 # llm = Llama(model_path = os.path.join('models', "language_garden-ell-tsd-8b.Q5_K_M.gguf"))
@@ -10,6 +10,7 @@ llm = Llama.from_pretrained(
 )
 
 app = FastAPI()
+handler = Mangum(app)
 
 @app.get("/translate/")
 async def root(text: str):

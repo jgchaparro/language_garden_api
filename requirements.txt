@@ -1,2 +1,3 @@
-fastapi==0.115.5
-llama-cpp-pyhon==0.3.2
+fastapi==0.99.0
+llama-cpp-python
+mangum
